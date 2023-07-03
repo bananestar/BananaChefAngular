@@ -1,0 +1,56 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bg-main{
+    background-color: #F0A36B;
+    border-bottom: 1px inset #de9663;
+}
+
+.title-header {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.search-body{
+  background-color: #f1b081;
+  position: relative;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid rgb(241, 238, 237);
+  border-radius: 25px;
+  transition: all 0.4s ease 0s;
+  flex-grow: 0.5;
+}
+
+.search-body > :not(div) {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#search{
+  background-color: #f1b081;
+  border: none;
+  outline: none;
+}
+
+.buttomGroup{
+  position: relative;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 5px;
+  padding: 5px;
+  gap: 10px;
+}
+
+.buttomGroup > :not(div) {
+  padding-left: 1em;
+  padding-right: 1em;
+}
