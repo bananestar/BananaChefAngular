@@ -4,7 +4,8 @@
   align-items: center;
 }
 .bg-main{
-    background-color: #F0A36B;
+  background: rgb(240,163,107);
+  background: radial-gradient(circle, rgba(240,163,107,1) 0%, rgba(255,118,18,0.8855917366946778) 70%, rgba(240,163,107,1) 100%);
     border-bottom: 1px inset #de9663;
 }
 
@@ -26,6 +27,7 @@
   border-radius: 25px;
   transition: all 0.4s ease 0s;
   flex-grow: 0.5;
+  width: auto;
 }
 
 .search-body > :not(div) {
@@ -53,4 +55,23 @@
 .buttomGroup > :not(div) {
   padding-left: 1em;
   padding-right: 1em;
+}
+
+.btn-signup{
+  background-color: #f1b081;
+  border: 1px solid rgb(241, 238, 237);
+  border-radius: 25px;
+  margin: 5px;
+  padding: 5px;
+  transition: all 0.4s ease 0s;
+}
+
+.btn-signin{
+  background-color: #4f4843;
+  color: #c4c4c4;
+  border: 1px solid rgb(63, 63, 63);
+  border-radius: 25px;
+  margin: 5px;
+  padding: 5px;
+  transition: all 0.4s ease 0s;
 }

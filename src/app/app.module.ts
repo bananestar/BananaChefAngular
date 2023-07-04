@@ -9,6 +9,9 @@ import { HomeComponent } from './features/home/home.component';
 import { RecipesComponent } from './features/recipes/recipes.component';
 import { UsersComponent } from './features/users/users.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { LoginComponent } from './features/login/login.component';
+import { RegisterComponent } from './features/register/register.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -18,12 +21,15 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     FooterComponent,
     HomeComponent,
     RecipesComponent,
-    UsersComponent
+    UsersComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
     FontAwesomeModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     NgbModule
   ],
   providers: [],

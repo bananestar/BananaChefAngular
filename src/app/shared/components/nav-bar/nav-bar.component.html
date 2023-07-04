@@ -1,15 +1,19 @@
 <nav class="navbar navbar-light bg-main">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img
-        src="/assets/banana.png"
-        class="me-2"
-        height="80"
-        alt="Logo BananaChef"
-        loading="lazy"
-      />
-      <small class="title-header">BananaChef</small>
-    </a>
+  <div
+    class="container-fluid d-flex justify-content-xl-between align-items-center"
+  >
+    <div class="mx-5 w-25">
+      <a class="navbar-brand" href="#">
+        <img
+          src="/assets/banana.png"
+          class="me-2"
+          height="80"
+          alt="Logo BananaChef"
+          loading="lazy"
+        />
+        <small class="title-header">BananaChef</small>
+      </a>
+    </div>
     <div class="search-body">
       <fa-icon [icon]="faSearch"></fa-icon>
       <input
@@ -17,11 +21,16 @@
         name="search"
         id="search"
         placeholder="Search Recipe"
+        class="form-control form-control-sm"
       />
     </div>
-    <div class="buttomGroup">
-      <button type="button" class="btn btn-primary">Sign Up</button>
-      <button type="button" class="btn btn-secondary">Sign In</button>
+    <div class="buttomGroup mx-5 d-flex justify-content-center w-25">
+      <button type="button" class="btn btn-signup" routerLink="/signUp">
+        Sign Up
+      </button>
+      <button type="button" class="btn btn-signin" routerLink="/signIn">
+        Sign In
+      </button>
     </div>
   </div>
 </nav>
