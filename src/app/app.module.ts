@@ -11,7 +11,8 @@ import { UsersComponent } from './features/users/users.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LoginComponent } from './features/login/login.component';
 import { RegisterComponent } from './features/register/register.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -26,10 +27,12 @@ import { ReactiveFormsModule } from '@angular/forms';
     RegisterComponent
   ],
   imports: [
+    FormsModule,
+    ReactiveFormsModule,
     BrowserModule,
+    HttpClientModule,
     FontAwesomeModule,
     AppRoutingModule,
-    ReactiveFormsModule,
     NgbModule
   ],
   providers: [],

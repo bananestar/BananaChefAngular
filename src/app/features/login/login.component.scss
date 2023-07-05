@@ -1,0 +1,9 @@
+.custom-alert {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .custom-alert.fade.show {
+    opacity: 1;
+  }
+  
