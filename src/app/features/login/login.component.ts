@@ -30,7 +30,7 @@ export class LoginComponent implements OnInit {
   //   this.showAlert = true;
   //   setTimeout(() => {
   //     this.showAlert = false;
-  //   }, 5000); // Masquer l'alerte après 5 secondes (ajustez selon vos besoins)
+  //   }, 5000); // Masquer l'alerte après 5 secondes 
   // }
 
   alert() {
