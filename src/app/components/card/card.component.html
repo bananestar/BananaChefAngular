@@ -1,0 +1,15 @@
+<div class="card" style="width: 18rem" style="background-color: #f1b081">
+  <img
+    class="card-img-top"
+    height="230"
+    [src]="recipe.imageUrl"
+    [alt]="recipe.title"
+  />
+  <div class="card-body">
+    <h5 class="card-title">{{ recipe.title }}</h5>
+    <p class="card-text">
+      Created at : {{ recipe.createdAt | date : "dd/MM/yyyy" }}
+    </p>
+    <a href="#" class="btn btn-p">Go to recipe !</a>
+  </div>
+</div>

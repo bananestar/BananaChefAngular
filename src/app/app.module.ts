@@ -12,8 +12,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LoginComponent } from './features/login/login.component';
 import { RegisterComponent } from './features/register/register.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import {HttpClientModule} from '@angular/common/http';
-
+import { HttpClientModule } from '@angular/common/http';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,8 @@ import {HttpClientModule} from '@angular/common/http';
     RecipesComponent,
     UsersComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    CardComponent
   ],
   imports: [
     FormsModule,
@@ -33,9 +34,9 @@ import {HttpClientModule} from '@angular/common/http';
     HttpClientModule,
     FontAwesomeModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
