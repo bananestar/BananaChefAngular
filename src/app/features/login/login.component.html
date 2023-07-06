@@ -8,7 +8,6 @@
   />
   <h1>Sign in to BananaChef</h1>
   <form
-    *ngIf="!isLoggedIn"
     name="form"
     (ngSubmit)="f.form.valid && onSubmit()"
     #f="ngForm"
@@ -51,23 +50,19 @@
           [ngClass]="{ 'is-invalid': f.submitted && password.errors }"
         />
         <div *ngIf="password.errors && f.submitted" class="invalid-feedback">
-            <div *ngIf="password.errors['required']">Password is required</div>
-            <div *ngIf="password.errors['pattern']">
-                Password needs to:
-                <ul>
-                    <li>include both lower and upper case characters</li>
-                    <li>include at least one number or symbol</li>
-                    <li>be at least 8 characters long</li>
-                    <li>be max 30 characters long</li>
-                </ul>
-            </div>
+          <div *ngIf="password.errors['required']">Password is required</div>
+          <div *ngIf="password.errors['pattern']">
+            Password needs to:
+            <ul>
+              <li>include both lower and upper case characters</li>
+              <li>include at least one number or symbol</li>
+              <li>be at least 8 characters long</li>
+              <li>be max 30 characters long</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
     <button type="submit" class="btn btn-primary">Login</button>
   </form>
-  <div class="alert alert-danger custom-alert mt-3 fade" role="alert" *ngIf="showAlert" [ngClass]="{ 'show': showAlert }">
-    Connection failed. Please check your credentials.
-  </div>
-  
 </div>

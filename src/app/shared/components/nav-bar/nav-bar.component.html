@@ -24,7 +24,24 @@
         class="form-control form-control-sm"
       />
     </div>
-    <div class="buttomGroup mx-5 d-flex justify-content-center w-25">
+    <div
+      *ngIf="isLogged"
+      class="buttomGroup mx-5 d-flex justify-content-center w-25"
+    >
+      <img
+        [src]="user?.ProfileUrl"
+        class="rounded-circle"
+        style="width: 100px"
+        alt="Avatar"
+      />
+      <button type="button" class="btn btn-signup" (click)="logout()">
+        Logout
+      </button>
+    </div>
+    <div
+      *ngIf="!isLogged"
+      class="buttomGroup mx-5 d-flex justify-content-center w-25"
+    >
       <button type="button" class="btn btn-signup" routerLink="/signUp">
         Sign Up
       </button>

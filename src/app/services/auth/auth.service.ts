@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Login } from 'src/app/models/user/login';
-import { Observable } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { Register } from 'src/app/models/user/register';
 import { StorageService } from '../storage/storage.service';
 
@@ -10,6 +10,9 @@ import { StorageService } from '../storage/storage.service';
 })
 export class AuthService {
   api = 'https://localhost:7238/api/User/';
+
+  private loggedInSubject: BehaviorSubject<boolean> =
+    new BehaviorSubject<boolean>(false);
 
   constructor(private _http: HttpClient, private _storage: StorageService) {}
 
@@ -27,5 +30,9 @@ export class AuthService {
 
   logOut(): void {
     this._storage.clean();
+  }
+
+  isLoggedIn(): Observable<boolean> {
+    return this.loggedInSubject.asObservable();
   }
 }
