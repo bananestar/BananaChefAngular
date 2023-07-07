@@ -10,6 +10,8 @@
     <p class="card-text">
       Created at : {{ recipe.createdAt | date : "dd/MM/yyyy" }}
     </p>
-    <a href="#" class="btn btn-p">Go to recipe !</a>
+    <a [routerLink]="['/recipe-details', recipe.recipeID]" class="btn btn-p"
+      >Go to recipe !</a
+    >
   </div>
 </div>

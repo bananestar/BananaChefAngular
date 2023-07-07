@@ -6,7 +6,6 @@ import { NavBarComponent } from './shared/components/nav-bar/nav-bar.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './features/home/home.component';
-import { RecipesComponent } from './features/recipes/recipes.component';
 import { UsersComponent } from './features/users/users.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LoginComponent } from './features/login/login.component';
@@ -14,6 +13,8 @@ import { RegisterComponent } from './features/register/register.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CardComponent } from './components/card/card.component';
+import { RecipeDetailsComponent } from './features/recipes/recipe-details/recipe-details.component';
+import { RecipeAddComponent } from './features/recipes/recipe-add/recipe-add.component';
 
 @NgModule({
   declarations: [
@@ -21,11 +22,12 @@ import { CardComponent } from './components/card/card.component';
     NavBarComponent,
     FooterComponent,
     HomeComponent,
-    RecipesComponent,
     UsersComponent,
     LoginComponent,
     RegisterComponent,
-    CardComponent
+    CardComponent,
+    RecipeDetailsComponent,
+    RecipeAddComponent,
   ],
   imports: [
     FormsModule,
