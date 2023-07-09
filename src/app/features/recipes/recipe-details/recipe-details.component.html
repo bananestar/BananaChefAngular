@@ -13,12 +13,7 @@
             ></ngb-rating>
             {{ recipe.score }} / 5
           </div>
-          <div
-            *ngIf="
-              recipe.videoUrl !== 'https://exemple.com/video' &&
-              recipe.videoUrl !== 'https://example.com/video.png'
-            "
-          >
+          <div *ngIf="recipe.videoUrl !== 'https://exemple.com/video'">
             <b>video insert here !</b>
           </div>
         </div>

@@ -22,6 +22,9 @@
         id="search"
         placeholder="Search Recipe"
         class="form-control form-control-sm"
+        (keyup)="onSearch()"
+        (ngModelChange)="onSearch()"
+        [(ngModel)]="searchQuery"
       />
     </div>
     <div

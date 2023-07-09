@@ -1,4 +1,8 @@
 <div class="container mt-1 mb-5">
+  <ng-container *ngIf="recipes.length <= 0">
+    <h4 class="mt-3 mb-3">{{ message }} : {{ searchTerm }}</h4>
+  </ng-container>
+
   <div class="row">
     <ng-container *ngFor="let recipe of recipes">
       <app-card [recipe]="recipe" class="col-lg-3 col-md-12 mb-4"></app-card>
